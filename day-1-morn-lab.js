@@ -13,12 +13,24 @@ if(grade >= 90){
 }
 
 
-let time = 18
+let hr = 18
 
-if(time >= 5 && time < 12){
+if(hr >= 5 && hr < 12){
     console.log("Good Morning")
-} else if(time >= 12 && time < 16){
+} else if(hr >= 12 && hr < 16){
     console.log("Good Afternoon")
-} else if(time >=16 && time <= 24){
+} else if(hr >=16 && hr <= 24){
     console.log("Hey there")
 }
+
+const DATE = new Date();
+let time = DATE.getHours();
+
+if(time >= 5 && time < 12) {
+    console.log("Good Morning");
+} else if(time > 12 && time < 16)  {
+    console.log("Good Afternoon");
+} else {
+    console.log("Hey There");
+}
+
